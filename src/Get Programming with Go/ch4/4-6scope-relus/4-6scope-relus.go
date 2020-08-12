@@ -19,5 +19,5 @@ func main() {
 	default:
 		day := rand.Intn(31) + 1 // 这两个day变量是全新的变量，跟上面声明的变量的同名变量并不相同
 		fmt.Println(era, year, month, day)
-	}
-}
+	} // month变量和day变量不再处于作用域之内
+} // year变量不再处于作用域之内
