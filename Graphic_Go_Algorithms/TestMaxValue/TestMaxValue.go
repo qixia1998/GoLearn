@@ -4,7 +4,10 @@ import "fmt"
 
 func max(arrays []int, length int) int {
 	for i := 0; i < length-1; i++ {
-		if arrays[i] > arrays[i+1] { // swap
+		if arrays[i] > arrays[i+1] { // 交换
+            // var temp = arrays[i]
+			// arrays[i] = arrays[i+1]
+			// arrays[i+1] = temp
 			arrays[i], arrays[i+1] = arrays[i+1], arrays[i]
 		}
 	}

@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func min(arrays []int, length int) int {
-	var minIndex = 0 // the index of the minimum
+	var minIndex = 0 // 最小值的索引
 	for j := 1; j < length; j++ {
 		if arrays[minIndex] > arrays[j] {
 		minIndex = j
