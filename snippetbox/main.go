@@ -8,6 +8,12 @@ import (
 // 定义一个写入包含字节切片的 home 处理函数
 // "Hello from Snippetbox"  作为响应主体
 func home(w http.ResponseWriter, r *http.Request) {
+	// 检查当前请求 URL 路径是否与“/”完全匹配。
+	// 如果不匹配，使用 http.NotFound() 函数向客户端发送404响应
+	if r.URL.Path != "/" {
+		http.NotFound(w, r)
+		return
+	}
 	w.Write([]byte("Hello from Snippetbox"))
 }
 
