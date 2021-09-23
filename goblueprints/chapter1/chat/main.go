@@ -1,7 +1,7 @@
 package main
 
 import (
-	"GoLearn/goblueprints/chapter1/trace"
+	"github.com/matryer/goblueprints/chapter1/trace"
 	"flag"
 	"log"
 	"net/http"

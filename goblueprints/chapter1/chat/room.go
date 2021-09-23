@@ -1,11 +1,12 @@
 package main
 
 import (
-	"GoLearn/goblueprints/chapter1/trace"
+
 	"log"
 	"net/http"
 
 	"github.com/gorilla/websocket"
+	"github.com/matryer/goblueprints/chapter1/trace"
 
 )
 
