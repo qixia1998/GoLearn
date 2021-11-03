@@ -12,7 +12,7 @@ const refString = `[{ \"email\": \"email@example.com\" \
 
 func main() {
 
-	// This pattern is simplified for brevity
+	// 为简洁起见，此模式已简化
 	emailRegexp := regexp.MustCompile("[a-zA-Z0-9]{1,}@[a-zA-Z0-9]{1,}\\.[a-z]{1,}")
 	first := emailRegexp.FindString(refString)
 	fmt.Println("First:")
