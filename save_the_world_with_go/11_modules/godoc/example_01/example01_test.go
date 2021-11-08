@@ -1,6 +1,6 @@
 package example_01_test
 
-import "github.com/juanmanuel-tirado/savetheworldwithgo/11_modules/godoc/example_01"
+import "github.com/qixia1998/GoLearn/save_the_world_with_go/11_modules/godoc/example_01"
 
 func ExampleMsg_Send() {
     m := example_01.Msg{"Hello"}
