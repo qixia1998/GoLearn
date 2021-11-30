@@ -1,0 +1,17 @@
+syntax = "proto3";
+package user;
+
+option go_package="GoLearn/save_the_world_with_go/14_protocolbuffers/pb/example_08/user";
+
+message User {
+    string user_id = 1;
+    string email = 2;
+}
+
+message UserList {
+    repeated User users = 1;
+}
+
+message Teams {
+    map<string, UserList> teams = 1;
+}
