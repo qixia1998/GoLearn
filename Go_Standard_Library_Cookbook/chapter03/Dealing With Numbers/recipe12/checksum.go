@@ -1,5 +1,6 @@
 package main
 
+// 生成校验和
 import (
 	"crypto/md5"
 	"fmt"
