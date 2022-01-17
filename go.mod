@@ -7,7 +7,10 @@ require (
 	github.com/rs/zerolog v1.26.0
 )
 
-require github.com/felixge/httpsnoop v1.0.1 // indirect
+require (
+	github.com/felixge/httpsnoop v1.0.1 // indirect
+	github.com/gorilla/schema v1.2.0 // indirect
+)
 
 require (
 	github.com/gin-contrib/sse v0.1.0 // indirect
