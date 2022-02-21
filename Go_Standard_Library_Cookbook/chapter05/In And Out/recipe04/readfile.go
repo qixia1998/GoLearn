@@ -1,5 +1,6 @@
 package main
 
+// 将文件读取到字符串
 import (
 	"os"
 	"bufio"

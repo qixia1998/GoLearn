@@ -1,5 +1,6 @@
 package main
 
+// 按名称打开文件
 import (
 	"fmt"
 	"io"

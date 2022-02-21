@@ -1,5 +1,6 @@
 package main
 
+// 编写标准输出和错误
 import (
 	"fmt"
 	"io"

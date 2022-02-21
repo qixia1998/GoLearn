@@ -1,5 +1,6 @@
 package main
 
+// 读/写不同的字符集
 import (
 	"fmt"
 	"io/ioutil"
