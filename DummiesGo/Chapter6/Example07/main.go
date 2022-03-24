@@ -27,4 +27,9 @@ func main() {
 	copy(v, t)
 	fmt.Println(v)
 	fmt.Println(t)
+
+	v = make([]int, 10)
+	copy(v, t)
+	fmt.Println(v)
+	fmt.Println(t)
 }
