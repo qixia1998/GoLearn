@@ -13,6 +13,7 @@ type Point struct {
 	Name []string
 }
 
+// 只比较X Y
 //func (p1 Point) Equal(p2 Point) bool {
 //	if p1.X == p2.X &&
 //		p1.Y == p2.Y &&
