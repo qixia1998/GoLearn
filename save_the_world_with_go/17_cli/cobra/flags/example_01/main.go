@@ -1,26 +1,24 @@
 package main
 
-// 基本 Cobra CLI
+// 命令接受参数
 import (
 	"fmt"
 	"github.com/spf13/cobra"
 	"os"
+	"strings"
 )
 
 var RootCmd = &cobra.Command{
-	Use:     "hello",
-	Short:   "short message",
-	Long:    "Long message",
-	Version: "v0.1.0",
-	Example: "this is an example",
+	Use:  "main",
+	Long: "Long message",
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("Save the world with Go!!!")
+		fmt.Printf("%s\n", strings.Join(args, ","))
 	},
 }
 
 func main() {
 	if err := RootCmd.Execute(); err != nil {
-		fmt.Fprintln(os.Stderr, err)
+		fmt.Println(os.Stderr, err)
 		os.Exit(1)
 	}
 }
