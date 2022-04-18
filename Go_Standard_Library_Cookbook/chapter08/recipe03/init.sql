@@ -1,5 +1,5 @@
 CREATE DATABASE posttest;
-\c potest
+\c posttest
 
 DROP TABLE IF EXISTS post;
 CREATE TABLE post (
