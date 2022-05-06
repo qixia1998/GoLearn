@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
+	"github.com/gorilla/schema"
 	"html/template"
 	"log"
 	"net/http"
-	"github.com/gorilla/schema"
 )
 
 const (
@@ -30,18 +30,18 @@ func readForm(r *http.Request) *User {
 }
 
 func login(w http.ResponseWriter, r *http.Request) {
-	if r.Method == "GET"{
-		parsedTemplate, _ := template.ParseFiles("templates/login-form.html")
+	if r.Method == "GET" {
+		parsedTemplate, _ := template.ParseFiles("../templates/login-form.html")
 		parsedTemplate.Execute(w, nil)
 	} else {
 		user := readForm(r)
-		fmt.Fprintf(w, "Hello " + user.Username + "!")
+		fmt.Fprintf(w, "Hello "+user.Username+"!")
 	}
 }
 
 func main() {
 	http.HandleFunc("/", login)
-	err := http.ListenAndServe(CONN_HOST + ":" + CONN_PORT, nil)
+	err := http.ListenAndServe(CONN_HOST+":"+CONN_PORT, nil)
 	if err != nil {
 		log.Fatal("error starting http server : ", err)
 		return

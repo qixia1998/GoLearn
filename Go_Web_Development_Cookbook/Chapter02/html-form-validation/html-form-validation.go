@@ -54,7 +54,7 @@ func validateUser(w http.ResponseWriter, r *http.Request, user *User) (bool, str
 
 func login(w http.ResponseWriter, r *http.Request) {
 	if r.Method == "GET" {
-		parsedTemplate, _ := template.ParseFiles("templates/login-form.html")
+		parsedTemplate, _ := template.ParseFiles("../templates/login-form.html")
 		parsedTemplate.Execute(w, nil)
 	} else {
 		user := readForm(r)

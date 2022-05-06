@@ -7,8 +7,6 @@ import (
 	"log"
 	"net/http"
 	"os"
-
-	"golang.org/x/tools/go/analysis/passes/nilfunc"
 )
 
 const (
@@ -33,18 +31,18 @@ func fileHandler(w http.ResponseWriter, r *http.Request) {
 	if copyFileError != nil {
 		log.Printf("error occurred while file copy : ", copyFileError)
 	}
-	fmt.Fprintf(w, "File uploaded successfully : " + header.Filename)
+	fmt.Fprintf(w, "File uploaded successfully : "+header.Filename)
 }
 
 func index(w http.ResponseWriter, r *http.Request) {
-	parsedTemplate, _ := template.ParseFiles("templates/upload-file.html")
+	parsedTemplate, _ := template.ParseFiles("../templates/upload-file.html")
 	parsedTemplate.Execute(w, nil)
 }
 
 func main() {
 	http.HandleFunc("/", index)
 	http.HandleFunc("/upload", fileHandler)
-	err := http.ListenAndServe(CONN_HOST + ":" + CONN_PORT, nil)
+	err := http.ListenAndServe(CONN_HOST+":"+CONN_PORT, nil)
 	if err != nil {
 		log.Fatal("error starting http server : ", err)
 		return
