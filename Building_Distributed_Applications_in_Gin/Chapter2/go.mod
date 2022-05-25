@@ -1,6 +1,6 @@
 module GoLearn/Building_Distributed_Applications_in_Gin/Chapter2
 
-go 1.17
+go 1.18
 
 require (
 	github.com/gin-gonic/gin v1.7.7
