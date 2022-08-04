@@ -1,5 +1,5 @@
 FROM scratch
-MAINTAINER jackson.nic@gmail.com
+MAINTAINER qixia717138552@gmail.com
 
 EXPOSE 8080
 
