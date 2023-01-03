@@ -1,9 +1,0 @@
-// START: twitter
-syntax = "proto3";
-
-package twitter;
-
-message Tweet {
-  string message = 1;
-}
-// END: twitter
