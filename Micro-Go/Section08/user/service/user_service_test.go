@@ -1,9 +1,9 @@
 package service
 
 import (
+	"GoLearn/Micro-Go/Section08/user/dao"
+	"GoLearn/Micro-Go/Section08/user/redis"
 	"context"
-	"github.com/qixia1998/Micro-Go/Section08/user/dao"
-	"github.com/qixia1998/Micro-Go/Section08/user/redis"
 	"testing"
 )
 

@@ -1,14 +1,14 @@
 package main
 
 import (
+	"GoLearn/Micro-Go/Section08/user/dao"
+	"GoLearn/Micro-Go/Section08/user/endpoint"
+	"GoLearn/Micro-Go/Section08/user/redis"
+	"GoLearn/Micro-Go/Section08/user/service"
+	"GoLearn/Micro-Go/Section08/user/transport"
 	"context"
 	"flag"
 	"fmt"
-	"github.com/qixia1998/Micro-Go/Section08/user/dao"
-	"github.com/qixia1998/Micro-Go/Section08/user/endpoint"
-	"github.com/qixia1998/Micro-Go/Section08/user/redis"
-	"github.com/qixia1998/Micro-Go/Section08/user/service"
-	"github.com/qixia1998/Micro-Go/Section08/user/transport"
 	"log"
 	"net/http"
 	"os"

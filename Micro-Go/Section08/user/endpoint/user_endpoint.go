@@ -1,9 +1,9 @@
 package endpoint
 
 import (
+	"GoLearn/Micro-Go/Section08/user/service"
 	"context"
 	"github.com/go-kit/kit/endpoint"
-	"github.com/qixia1998/Micro-Go/Section08/user/service"
 )
 
 type UserEndpoints struct {
