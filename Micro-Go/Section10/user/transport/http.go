@@ -1,6 +1,7 @@
 package transport
 
 import (
+	"GoLearn/Micro-Go/Section10/user/endpoint"
 	"context"
 	"encoding/json"
 	"errors"
@@ -8,7 +9,6 @@ import (
 	"github.com/go-kit/kit/transport"
 	kithttp "github.com/go-kit/kit/transport/http"
 	"github.com/gorilla/mux"
-	"github.com/qixia1998/Micro-Go/Section10/user/endpoint"
 	"net/http"
 	"os"
 )

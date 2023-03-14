@@ -1,11 +1,11 @@
 package service
 
 import (
+	"GoLearn/Micro-Go/Section10/user/dao"
+	"GoLearn/Micro-Go/Section10/user/redis"
 	"context"
 	"errors"
 	"github.com/jinzhu/gorm"
-	"github.com/qixia1998/Micro-Go/Section10/user/dao"
-	"github.com/qixia1998/Micro-Go/Section10/user/redis"
 	"log"
 	"time"
 )
