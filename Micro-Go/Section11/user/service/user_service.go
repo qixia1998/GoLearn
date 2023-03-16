@@ -1,8 +1,8 @@
 package service
 
 import (
-	"GoLearn/Micro-Go/Section10/user/dao"
-	"GoLearn/Micro-Go/Section10/user/redis"
+	"GoLearn/Micro-Go/Section11/user/dao"
+	"GoLearn/Micro-Go/Section11/user/redis"
 	"context"
 	"errors"
 	"github.com/jinzhu/gorm"
