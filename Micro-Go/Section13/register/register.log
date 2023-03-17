@@ -1,0 +1,2 @@
+2023/03/17 discovery_client.go:99: register service err : Put "http://localhost:8500/v1/agent/service/register": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2023/03/17 main.go:58: register service err : Put "http://localhost:8500/v1/agent/service/register": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
