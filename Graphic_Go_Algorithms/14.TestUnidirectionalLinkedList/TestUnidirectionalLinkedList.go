@@ -28,6 +28,22 @@ func initial() {
 	nodeBerkeley.next = tail
 }
 
+func removeNode(removePosition int) {
+	var p = head
+	var i = 0
+	// Move the node to the previous node position that was deleted
+	for {
+		if p.next == nil || i >= removePosition-1 {
+			break
+		}
+		p = p.next
+		i++
+	}
+	var temp = p.next    // Save the node you want to delete
+	p.next = p.next.next // Previous node next points to next of delete the node
+	temp.next = nil
+}
+
 func insert(insertPosition int, data string) {
 	var p = head
 	var i = 0
@@ -69,8 +85,11 @@ func main() {
 	//fmt.Printf("Append a new node name: Walnut to the end: \n")
 	//add("Walnut")
 
-	fmt.Printf("Insert a new node Walnut at index = 2: \n")
-	insert(2, "Walnut")
+	//fmt.Printf("Insert a new node Walnut at index = 2: \n")
+	//insert(2, "Walnut")
+
+	fmt.Printf("Delete a new node Berkeley at index = 2 : \n")
+	removeNode(2)
 
 	output(head)
 }
