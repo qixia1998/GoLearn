@@ -28,6 +28,24 @@ func initial() {
 	nodeBerkeley.next = tail
 }
 
+func insert(insertPosition int, data string) {
+	var p = head
+	var i = 0
+	for {
+		if p.next == nil || i >= insertPosition-1 {
+			break
+		}
+		p = p.next
+		i++
+	}
+	var newNode *Node = new(Node)
+	newNode.data = data
+	newNode.next = p.next // newNode next point to next node
+	p.next = newNode      // current next point to newNode
+	newNode.prev = p
+	newNode.next.prev = newNode
+}
+
 func add(data string) {
 	var newNode *Node = new(Node)
 	newNode.data = data
@@ -64,8 +82,10 @@ func output(node *Node) {
 func main() {
 	initial()
 
-	fmt.Printf("Add a new node Walnut: \n")
-	add("Walnut")
+	//fmt.Printf("Add a new node Walnut: \n")
+	//add("Walnut")
+	fmt.Printf("Insert a new node Walnut at index 2 : \n")
+	insert(2, "Walnut")
 
 	output(head)
 }
