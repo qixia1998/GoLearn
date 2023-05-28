@@ -1,4 +1,4 @@
-package transport
+package service
 
 import (
 	"GoLearn/Micro-Go/Section14/register/discovery"
