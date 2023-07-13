@@ -1,5 +1,6 @@
 # GoLearn
 * Golang
+* Functional Programming
 * MicroService
 * Docker
 * Kubernetes
