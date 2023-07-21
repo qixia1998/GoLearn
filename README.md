@@ -1,6 +1,8 @@
 # GoLearn
 * Golang
 * Functional Programming
+* Full Stack
+* BlockChain
 * MicroService
 * Docker
 * Kubernetes
@@ -8,4 +10,5 @@
 * Algorithms
 * Cloud Native
 * Devops
+* System Design
 * ...
