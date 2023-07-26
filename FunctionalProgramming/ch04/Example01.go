@@ -5,9 +5,9 @@ import (
 	"math/rand"
 )
 
-func add(a, b int) int {
-	return a + b
-}
+//func add(a, b int) int {
+//	return a + b
+//}
 
 func rollDice() int {
 	return rand.Intn(6)
