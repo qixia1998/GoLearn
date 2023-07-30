@@ -1,4 +1,4 @@
-# GoLearn
+# Learning
 * Golang
 * Functional Programming
 * Full Stack
