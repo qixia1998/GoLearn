@@ -11,5 +11,5 @@
 * Cloud Native
 * Devops
 * System Design
-* ...
+* ......
 
