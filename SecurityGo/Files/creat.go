@@ -8,7 +8,8 @@ import (
 func main() {
 	newFile, err := os.Create("test.txt")
 	if err != nil {
-		log.Fatalf(err)
+		log.Fatal(err)
 	}
 	log.Println(newFile)
+	newFile.Close()
 }
