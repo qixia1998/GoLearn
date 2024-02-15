@@ -48,6 +48,23 @@ func insert(insertPosition int, data string) {
 	p.next = newNode
 }
 
+func removeNode(removePosition int) {
+	var p = head
+	var i = 0
+
+	for {
+		if p.next == nil || i > removePosition-1 {
+			break
+		}
+		p = p.next
+		i++
+	}
+
+	var temp = p.next
+	p.next = p.next.next
+	temp.next = nil
+}
+
 func output(node *Node) {
 	var p = node
 	for {
@@ -65,6 +82,9 @@ func main() {
 
 	fmt.Printf("Insert a new node E at index = 2:\n")
 	insert(2, "E")
+
+	fmt.Printf("Delete a new node E at index = 2:\n")
+	removeNode(2)
 
 	output(head)
 }
